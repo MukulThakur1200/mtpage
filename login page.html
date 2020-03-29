@@ -1,0 +1,51 @@
+<html>
+<head>
+    
+    <title>login and sregistration form</title>
+    <link rel="stylesheet"href="style.css">
+    </head>
+    <script>
+    function validate()
+        {
+            var uss="Mukul Thakur";
+            var pass="Thakursahab";
+            var x= document.getElementById("us").value;
+            
+            var y=document.getElementById("pass").value;
+            if(x== uss &&y== pass)
+                {
+                    window.open("My first web pct.html",target="_blank");
+                }
+            else{
+                alert("Invalid Password");
+            }
+        }
+    
+    </script>
+<body>
+
+ <form>
+    <div class="login">
+        <h1>LOGIN</h1>
+        <div class="textbox">
+          <input id="us"type="text" placeholder="USER NAME"name=""value="">
+        </div>    
+        <div class="textbox">
+             <input id="pass"type="PASSWORD" placeholder="PASSWORD"name=""value="">
+        </div>
+      
+                     <input CLASS="btn" type="button"name=""value="Sign in" onclick="javascript: validate()";>
+          
+       <a href="forgot.html">Forgot Password?</a>  
+  
+        </div>
+
+    </form>
+    
+    
+    </body>
+
+
+
+
+</html>
