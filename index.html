@@ -1,59 +1,130 @@
 <html>
-<head>
-    
-    <title>fab page </title>
-    <link rel="stylesheet" href="try.css">
-    
+    <head>
+        <title>Traffic</title>
+        <link rel="stylesheet" href="traffic.css">
+    </head>
     <script>
+    
         
-    function gallary()
-        {
-            alert("Abhi kuch nhi h");
-        }
-        function contact()
-        {
-            alert("Gadhe Niche dekh le");
-        }
+        var d= prompt("You are the driver of emergency vehicle you have to send the signal to the coming traffic light that you are coming from which direction and going to which direction here 1,2,3,4 is the direction from where you are comming from.\n Enter the driver Signal:\n 1\n 2\n 3\n 4\n");
+        var g= prompt("Enter direction where you want to go:\n 1\n 2\n 3\n 4\n");
+
         
-        function about()
-        {   
-            window.location.replace("practice.html");
-        }
-        function butone()
-        {
-            alert("kya chachata h.. Bache ki jaan leke manega kya...bhai abhi pura nhi banaya h...");
+        function start(){
+            if(d==1)
+                {
+                  document.getElementById('car').style.display="block";
+               
+                    if(g==1)
+                        {
+                          document.getElementById('car').style.animation="crru 4s 10";
+                        }
+                    else if(g==2){
+                    document.getElementById('car').style.animation="crrl 4s 10";
+                    }
+                     else if(g==3){
+                     document.getElementById('car').style.animation="crrs 4s 10";
+                    } 
+                    else if(g==4){
+                         document.getElementById('car').style.animation="crrr 4s 10";
+
+                    }
+        
+                }
+            else if(d==2){
+                  document.getElementById('tar').style.display="block";
+
+                if(g==4)
+                    {
+                     document.getElementById('tar').style.animation="trr4 4s 10";
+ 
+                    }
+                else if(g==1){
+                     document.getElementById('tar').style.animation="trr1 4s 10";
+
+                }
+                 else if(g==3){
+                     document.getElementById('tar').style.animation="trr3 4s 10";
+
+                }
+                  else if(g==2)
+                      {
+                     document.getElementById('tar').style.animation="trr2 4s 10";
+
+                }
+            }
+            else if(d==3){
+                  document.getElementById('thr').style.display="block";
+                
+                if(g==1)
+                    {
+                     document.getElementById('thr').style.animation="thrr1 4s 10"; 
+                    }
+                    else if(g==4){
+                     document.getElementById('thr').style.animation="thrr4 4s 10";
+
+                }
+                 else if(g==3){
+                     document.getElementById('thr').style.animation="thrr3 4s 10";
+
+                }
+                  else if(g==2)
+                      {
+                     document.getElementById('thr').style.animation="thrr2 4s 10";
+
+                }
+            }
+            
+                  else if(d==4){                          document.getElementById('for').style.display="block";
+              
+                if(g==1)
+                    {
+                     document.getElementById('for').style.animation="frr1 4s 10"; 
+                    }
+                    else if(g==4){
+                     document.getElementById('for').style.animation="frr4 4s 10";
+
+                }
+                 else if(g==3){
+                     document.getElementById('for').style.animation="frr3 4s 10";
+
+                }
+                  else if(g==2)
+                      {
+                     document.getElementById('for').style.animation="frr2 4s 10";
+
+                }
+            }
         }
     </script>
-    </head>
-            <body>
     
-               <div class="top">
-    
-                   <h1>HEAVEN</h1>
-                   <div>
-                   <a href="try.html">Home</a>
-                   <a href="javascript: about();">About</a>
-                   <a href="javascript:contact();">contact</a>
-                   <a href="javascript: gallary();">Gallary</a>
-                   </div>
-                       </div>    
-                
-                <div class="middle"> 
-                    
-                    <h3>Welcome to India</h3>
-                    <h1>Do come & visit<h1 class="place"> </h1> </h1>
-                    <p>"These are some of the best places of the world"</p><br>
-                    <a href="javascript: butone();" class="butone">Learn more</a>
-                    <a href="login%20page.html" class="buttwo">sign up</a>                 
-                </div>
- 
-                    
-                <div class="bottom">
-                 
-                    <h3>Contact details:-</h3>
-                    <p>phone no:- <a href="8800145139">8800145139</a></p><p>facebook:- Not available<p>instagram:Dont try to follow</p><p>Email Id:-<a href="mukul2002thakur@gmail.co">mukul2002thakur@gmail.com</a>
-                    </p>
-            
-                </div>
-            </body>
+    <body onload="start()">
+     
+    <div class="a1">
+         <div class="line1"></div>
+     <div class="num3">2</div>
+        </div>
+
+    <div class="a2">
+        <div class="line"></div>
+        <div class="num3">3</div></div>
+    <div class="a3"><div class="line1"></div>
+   <div class="num4">4</div>         </div>
+    <div class="a4"><div class="line2"></div>
+       <div class="num1">1</div>   
+        </div>
+        
+        <div class="car" id="car">E-V</div>
+        <div class="tar" id="tar">E-V</div>
+        <div class="thr" id="thr">E-V</div>
+        <div class="for" id="for">E-V</div>
+        
+        
+
+        
+
+        
+
+        
+    </body>
 </html>
