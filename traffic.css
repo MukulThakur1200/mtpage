@@ -48,9 +48,8 @@ body{
     position: absolute;
     top: 93%;
     left: 45%;
-    background-color: red;
     height: 7%;
-    width: 10%;
+    width: 20%;
     display: none;
 }
 
@@ -59,9 +58,8 @@ body{
     position: absolute;
     top: 47%;
     left:0%;
-    background-color: red;
-    height: 6%;
-    width: 15%;
+    height: 8%;
+    width: 20%;
     display: none;
 
 }
@@ -69,21 +67,19 @@ body{
      position: absolute;
     top: 0%;
     left:45%;
-    background-color: red;
-    height: 7%;
-    width: 10%;
+   height: 7%;
+    width: 20%;
     display: none;
 
 }
+
 #for{
     position: absolute;
     top: 47%;
-    left:85%;
-    background-color: red;
-    height: 6%;
-    width: 15%;
+    left:80%;
+    height: 7%;
+    width: 20%;
     display: none;
-
 }
 
 @keyframes crrl{
@@ -96,7 +92,7 @@ body{
     0%{top:90%;}
     25%{top:45%;}
     50%{ top:45%; transform: rotate(90deg);}
-    100%{left:89%;top: 45%;transform: rotate(90deg);}
+    100%{left:80%;top: 45%;transform: rotate(90deg);}
 }
 
 @keyframes crrs{
@@ -117,7 +113,7 @@ body{
      0%{left:0%;}
     25%{left:25%;}
     50%{ left:65%;}
-    100%{left:85%;}
+    100%{left:80%;}
 }
 
 @keyframes trr1{
@@ -152,7 +148,7 @@ body{
      0%{top:0%;}
     25%{top:45%;}
     50%{top: 45%; left:45%;transform: rotate(-90deg)}
-    100%{top: 45%; left: 89%; transform: rotate(-90deg)}
+    100%{top: 45%; left: 80%; transform: rotate(-90deg)}
 }
 
 @keyframes thrr3{
@@ -169,32 +165,33 @@ body{
 }
 
 @keyframes frr2{
-     0%{left:85%;}
+     0%{left:80%;}
     25%{left: 65%;}
     50%{ left:30%;}
     100%{left:0%;}
 }
 
 @keyframes frr4{
-     0%{left:85%;}
+     0%{left:80%;}
     25%{left: 45%;}
     50%{ left:45%; transform: rotate(180deg)}
-    100%{left:85%;transform: rotate(180deg)}
+    100%{left:80%;transform: rotate(180deg)}
 }
 
 @keyframes frr1{
-     0%{left:85%;}
+     0%{left:80%;}
     25%{left: 43%;}
     50%{ left:43%; transform: rotate(-90deg)}
     100%{left: 43%; top:90%;transform: rotate(-90deg)}
 }
 
 @keyframes frr3{
-     0%{left:85%;}
+     0%{left:80%;}
     25%{left: 43%;}
     50%{ left:43%; transform: rotate(90deg)}
     100%{left: 43%; top:0%;transform: rotate(90deg)}
 }
+
 .line{
     position: absolute;
     width: 5%;
@@ -236,15 +233,38 @@ body{
     top: 85%;
     left: 7%;
 }
+.car img{
+    height: 100%;
+    width: 100%;
+    transform: rotate(-90deg);
+    }
+.tar img{
+       height: 100%;
+    width: 100%;
+}
+.thr img{
+       height: 100%;
+    width: 100%;
+    transform: rotate(90deg);
+}
+.for img{
+    height: 100%;
+    width: 100%;
+    transform: rotate(180deg);
+}
+
 @media only screen and (max-width:980px){
     .a2{
         width: 40%;
         left: 30%;
     }
-    
     .a4{
         width: 40%;
         left: 30%;
+    }
+    .car{
+        width: 10%;
+        height: 20%;
     }
     
 }
